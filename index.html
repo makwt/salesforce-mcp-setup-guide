@@ -729,7 +729,11 @@ Press Enter to open github.com in your browser...</code></pre></div>
 <h2>Common questions</h2>
 
 <h3>My session expired / I get an authentication error</h3>
-<p>Just tell Claude: <strong>"reconnect"</strong> — it will re-authenticate without restarting anything.</p>
+<p>Re-authenticate at the terminal with one command, then tell your AI assistant <strong>"reconnect"</strong>:</p>
+
+<div class="code-block"><button class="copy-btn">Copy</button><pre><code>sf org login web --instance-url https://willowtree.my.salesforce.com --alias willowtree</code></pre></div>
+
+<p>Your browser opens to the WillowTree Salesforce login page (same as during setup). Log in, return to Terminal, then tell your AI assistant: <strong>"reconnect"</strong>. It will pick up the new session without restarting anything.</p>
 
 <h3>I want to re-run setup</h3>
 <p>That's safe. Navigate back to the folder and run setup again:</p>
